@@ -1,16 +1,19 @@
+#recommend to use PostMan for testing#
+
 # This endpoint is triggered when new Company is assigned to a deal
 
 #For testing purposes create test Company in HubSpot
-# And change objectId to: Company Record ID from HubSpot
-@objectId = "1234"
+#Create a new deal with this company. 
+# And change objectId to: Company Record ID of the deal from HubSpot
 
+@objectId = "34646594437"
 
-POST  http://0.0.0.0:3000/webhook/hubspot/companies
+@hubspothash = fdasfdsagfdgfdsfdsafds
+
+POST  http://0.0.0.0:3000/{{hubspothash}}/webhooks/hubspot/deals
 Content-Type: application/json
 
-
-
 {
-    "objectType": "COMPANY",
+    "objectType": "DEAL",
     "objectId": {{objectId}}
 }
