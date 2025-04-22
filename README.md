@@ -94,8 +94,8 @@ cp .env.example .env
 1. Click Allow.
 1. Copy the Bot User OAuth Token and paste it as the `.env` value of `SLACK_TOKEN`.
 1. In Slack, go to the channel you created earlier. Click on the channel name at the top and scroll down.
-1. Copy the Channel ID and paste it as the `.env` value of `SLACK_ERROR_CHANNEL`.
-1. Similarly, set `SLACK_CHANNEL` as the channel you want the impact profiles to be posted on (can be the same as `SLACK_ERROR_CHANNEL` during development).
+1. Copy the Channel ID and paste it as the `.env` value of `SLACK_ADMIN_CHANNEL`.
+1. Similarly, set `SLACK_PROFILE_CHANNEL` as the channel you want the impact profiles to be posted on (can be the same as `SLACK_ADMIN_CHANNEL` during development).
 
 ## Deployment
 
