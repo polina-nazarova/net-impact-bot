@@ -1,8 +1,11 @@
+#recommend to use PostMan for testing#
+
 # This endpoint is triggered when new Company is assigned to a deal
 
 #For testing purposes create test Company in HubSpot
 #Create a new deal with this company. 
 # And change objectId to: Company Record ID of the deal
+# change hubspothash to your hash
 @objectId = "34646594437"
 @hubspothash = fdasfdsagfdgfdsfdsafds
 
